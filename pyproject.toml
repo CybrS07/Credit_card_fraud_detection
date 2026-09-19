@@ -1,0 +1,24 @@
+[project]
+name = "credit-card-fraud-detection"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "TAHA", email = "Jimmya@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "imblearn>=0.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+credit-card-fraud-detection = "credit_card_fraud_detection:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
